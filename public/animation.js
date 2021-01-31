@@ -13,3 +13,19 @@ gsap.from('.illustration', {
 	delay: 2.5,
 	ease: 'Power.InOut',
 })
+
+gsap.from('.logo', {
+	opacity: 0,
+	duration: 0.9,
+	delay: 1,
+	ease: 'Power4.InOut',
+})
+
+gsap.from('.animate2', {
+	opacity: 0,
+	duration: 0.7,
+	delay: 1.5,
+	x: -20,
+	ease: 'Power4.InOut',
+	stagger: 0.3,
+})
