@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito Sans';
+}
+
+.hero {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+
+.navigation {
+	background: transparent;
+	width: 100%;
+	height: 70px;
+	padding: 0 5%;
+	display: flex;
+    align-items: center;
+	position: absolute;
+    z-index: 100;
+}
+
+.navigation .logo {
+	color: #0b090a;
+	font-size: 0.9rem;
+    font-weight: 800;
+    flex: 2;
+}
+
+.navigation .logo span{
+    color: #4E76DC;
+}
+
+.navigation .nav-items{
+    flex: 1;
+    display: flex;
+    gap: 40px;
+}
+
+.navigation .nav-items li{
+    list-style: none;
+}
+
+.navigation .nav-items li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #0b090a;
+}
+
+.main-container {
+	position: relative;
+	display: flex;
+	padding: 0 5%;
+	height: 100%;
+}
+
+.main-container .main-section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	justify-content: center;
+}
+
+.main-section h1{
+    color: #0b090a;
+    font-size: 3.5rem;
+    line-height: 120%;
+}
+
+.main-section h1 span {
+    color: #4E76DC;
+}
+
+.main-section p {
+    color: #3a3a3a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.7rem;
+    width: 85%;
+    line-height: 160%;
+}
+
+.main-section a {
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 0.8rem 1.7rem;
+    text-decoration: none;
+    background: #4E76DC;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 15px 50px rgba(78, 118, 220, 0.3)
+}
+
+.main-section a:hover{
+    transform: translateY(-5px) !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+.main-container .illustration {
+	flex: 1;
+	display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 1366px){
+    .main-section h1{
+        font-size: 2.8rem;
+        line-height: 120%;
+    }
+
+    .main-section p {
+        font-size: 1rem;
+    }
+    
+    .main-section a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        padding: 0.7rem 1.8rem;
+    }
+}
+
+@media (max-width: 768px){
+    .main-container{
+        margin-top: 80px;
+        flex-direction: column;
+        row-gap: 80px;
+    }
+}
